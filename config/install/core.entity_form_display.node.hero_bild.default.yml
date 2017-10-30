@@ -1,0 +1,81 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_bild.field_hero_image
+    - node.type.hero_bild
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - path
+    - workbench_moderation
+id: node.hero_bild.default
+targetEntityType: node
+bundle: hero_bild
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    weight: 31
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: kulturdesign_image_browser
+    type: inline_entity_form_complex
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

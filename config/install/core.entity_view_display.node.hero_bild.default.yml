@@ -1,0 +1,31 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_bild.field_hero_image
+    - node.type.hero_bild
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.hero_bild.default
+targetEntityType: node
+bundle: hero_bild
+mode: default
+content:
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  field_hero_image: true
+  langcode: true

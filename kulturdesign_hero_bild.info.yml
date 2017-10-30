@@ -1,0 +1,24 @@
+name: 'KulturDesign Hero Bild'
+description: 'Provides Hero Bild inhaltstyp and related configuration. Fügen Sie große Bilder hinzu, die dann als Hero Images angezeigt werden'
+type: module
+core: 8.x
+dependencies:
+  - draggableviews
+  - entity_browser_entity_form
+  - field
+  - inline_entity_form
+  - language
+  - lightning_core
+  - media_entity
+  - menu_ui
+  - node
+  - panelizer
+  - path
+  - slick
+  - slick_ui
+  - slick_views
+  - user
+  - views
+  - workbench_moderation
+package: KulturDesign
+version: 8.x-1.0

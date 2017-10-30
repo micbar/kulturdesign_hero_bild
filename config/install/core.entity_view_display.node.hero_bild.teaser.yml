@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hero_bild.field_hero_image
+    - node.type.hero_bild
+  module:
+    - user
+id: node.hero_bild.teaser
+targetEntityType: node
+bundle: hero_bild
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  field_hero_image: true
+  langcode: true

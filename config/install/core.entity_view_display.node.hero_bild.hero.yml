@@ -1,0 +1,36 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.hero_bild.field_hero_image
+    - node.type.hero_bild
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.hero_bild.hero
+targetEntityType: node
+bundle: hero_bild
+mode: hero
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: banner
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  langcode: true
+  links: true
