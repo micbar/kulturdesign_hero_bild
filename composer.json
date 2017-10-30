@@ -1,0 +1,14 @@
+{
+    "name": "micbar/kulturdesign_hero_bild",
+    "description": "Hero Bild Content type and Views",
+    "type": "drupal-module",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "micbar",
+            "email": "michael.barz@zeitgestalten.eu"
+        }
+    ]
+}
